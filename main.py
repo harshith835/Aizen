@@ -43,9 +43,9 @@ with st.sidebar:
     select_op = option_menu('Home', ["OCR",'ChatBot','About Us'],icons = ['house','chat','person'] ,default_index=0)
 if select_op == "OCR":
 
-    imageQuestion = st.text_input("Bol bhai")
+    imageQuestion = st.text_input("What to extract from image?")
 
-    question = st.text_input("Kya bhai")
+    question = st.text_input("Ask question:")
 
     userImage = st.file_uploader("Photo de bhai (PNG, JPEG, JPG):", type=["png", "jpeg", "jpg"])
     outcome = ""
