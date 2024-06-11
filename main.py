@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 #api initialize
-genai=st.secrets["API_KEY"]
+genai.configure(api_key=st.secrets["API_KEY"])
 generation_config = {
 "temperature": 0,
 "top_p": 1,
